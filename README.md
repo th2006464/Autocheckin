@@ -43,6 +43,7 @@ V2.0 版本支持多站点多用户签到，不兼容 V1.0 版本配置，升级
 > Fork 后的项目 Github Actions 默认处于关闭状态，需要手动开启 Actions，执行一次工作流。后续定时任务(cron)才会自动执行。具体操作信息看：[关于定时任务不执行](#关于定时任务不执行)。
 
 Fork 该仓库，进入仓库后点击 `Settings`，右侧栏点击 `Secrets`，点击 `New secret`。按需添加以下值：
+Secret Name 对应API名称 ， Secret Value为字段
 
 | Secret Name          | Secret Value                                   | 参数说明                                                                        | 是否可选               |
 | -------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------- |
@@ -194,13 +195,7 @@ SSPanel Auto Checkin v2.1.5 签到通知
 
 因为签到详细信息涉及用户隐私问题，所以对任务结果中对域名和用户名进行了脱敏处理，如果你仍希望关闭任务结果的显示，可以配置 Secret `DISPLAY_CONTEXT` 的值为 `0` 将只展示任务推送结果，而不显示具体签到详情。
 
-### TGBot 推送相关参数获取
 
-> 需要`TELEGRAMBOT_TOKEN`和`TELEGRAMBOT_CHATID`一起使用，前者用于调用 bot，后者用于指定推送目标。
-
-| `TELEGRAMBOT_CHATID`获取                                                                                                    | `TELEGRAMBOT_TOKEN`获取                                                                                                   |
-| --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| ![GET_TELEGRAMBOT_CHATID](https://cdn.jsdelivr.net/gh/isecret/sspanel-autocheckin@master/assets/GET_TELEGRAMBOT_CHATID.png) | ![GET_TELEGRAMBOT_TOKEN](https://cdn.jsdelivr.net/gh/isecret/sspanel-autocheckin@master/assets/GET_TELEGRAMBOT_TOKEN.png) |
 
 ### Fork 之后如何同步原作者的更新内容
 
