@@ -46,7 +46,9 @@ Fork 该仓库，进入仓库后点击 `Settings`，右侧栏点击 `Secrets`，
 
 
 举例：
-*https://www.cordc.xyz----25*******@qq.com----t******0
+
+
+*https://www.c***c.xyz----25*******@qq.com----t******0
 
 
 
